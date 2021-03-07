@@ -40,7 +40,7 @@ def faculty_report(object):
     #print("Printing department and experience...")
     print("Name: {}".format(object.name))
     print("ID: {}".format(object.id))
-    print("Department: {}\nExperience: {}years".format(object.dept,object.expyrs))
+    print("Department: {}\nExperience: {} years".format(object.dept,object.expyrs))
 
 #=======================================
 
@@ -78,8 +78,8 @@ student4 = Student("NeonX",18,"3A",mark)
 
 faculty1 = Faculty("PHY-1001",48,"F1A",10,"Pure Science")
 faculty2 = Faculty("CHY-1001",50,"F1B",12,"Pure Science")
-faculty3 = Faculty("ITE1001",45,"F1C",8,"Information Technology")
-faculty4 = Faculty("CSE1001",40,"F2C",10,"Computer Science")
+faculty3 = Faculty("ITE-1001",45,"F1C",8,"Information Technology")
+faculty4 = Faculty("CSE-1001",40,"F2C",10,"Computer Science")
 
 studentlist = [] #list of student details
 #adding details to list
@@ -137,4 +137,3 @@ def outputreport(name):
 
     if flag==0:
         print("Not found!!!")
-
