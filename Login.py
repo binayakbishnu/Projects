@@ -1,4 +1,4 @@
-import Database
+import Database_info
 print("Welcome to Login module\n")
 
 def login():
@@ -11,9 +11,9 @@ def choose_det_rep(name):
     print("1.Details\n2.Report\n1 or 2->")
     dr=int(input())
     if dr==1:
-        Database.outputdetails(name)
+        Database_info.outputdetails(name)
     elif dr==2:
-        Database.outputreport(name)
+        Database_info.outputreport(name)
     #also reduces function call to the database to one place
 
 def student():
@@ -36,5 +36,5 @@ else:
     import time
     time.sleep(2)   #2 seconds wait
     print("Initialised Login module\n")
-    login()
+    #login()
 
