@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+    <head>
+        <title>Factorial Finder</title>
+        <style>
+            #factorials {
+            text-align: center;
+        }
+        #alternatechoice{
+            display: none;
+        }
+        </style>
+    </head>
+    <body>
+        <div id="factorials">
+            <h3>Choose a number: </h3>
+            <select id="choice">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+            </select>
+            <button id="go">Go</button>
+            <br><br><button id="alternate">Enter your own number</button>
+            
+            <div id="alternatechoice">
+                <br><input placeholder="Enter number" id="choice2" type="text" onfocus="this.value=''">
+                <button id="go2">Go</button>
+            </div>
+    
+            <p id="answer"></p>
+        </div>
+    </body>
+    <script type="text/javascript">
+    
+    function fact(x) {
+            if (x == 1)
+                return 1;
+
+            return x * fact(x - 1);
+        }
+        document.getElementById("go").onclick = function () {
+            var a;
+            a = document.getElementById("choice").value;
+            document.getElementById("answer").innerHTML = "Factorial is: " + String(fact(a));
+        }
+        document.getElementById("alternate").onclick = function()
+        {
+            document.getElementById("alternatechoice").style.display = "block";
+        }
+        
+        document.getElementById("go2").onclick = function () {
+            var a;
+            a = document.getElementById("choice2").value;
+            document.getElementById("alternatechoice").style.display = "none";
+            document.getElementById("answer").innerHTML = "Factorial is: " + String(fact(a));
+        }
+
+    </script>
+</html>
