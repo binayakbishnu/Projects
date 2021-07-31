@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "578293724230",
+    "project_id": "tec-appdev-final-project",
+    "storage_bucket": "tec-appdev-final-project.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:578293724230:android:757265d65734220e6dc647",
+        "android_client_info": {
+          "package_name": "com.example.appdev_project"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "578293724230-jp176mkiq1a0ntmbg551v0dg9kvs7q9o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCY9OmACGVMjbUkwZnkcBmC61bDx1DQ8ls"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "578293724230-jp176mkiq1a0ntmbg551v0dg9kvs7q9o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
